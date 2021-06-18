@@ -19,7 +19,7 @@ ranks = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', '
 
 
 
-print('Press Return to pick a card.')
+print('Press Enter to pick a card.')
 while True:
     keyboard.wait('Enter')
     x = random.randint(0, 3)

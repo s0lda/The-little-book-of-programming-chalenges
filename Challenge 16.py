@@ -31,7 +31,7 @@ if choice.upper() == 'H':
         elif guess < number:
             attempts += 1
             print('Too low.')
-        elif guess > number:
+        else:
             attempts += 1
             print('Too high.')
 

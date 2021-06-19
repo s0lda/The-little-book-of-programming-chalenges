@@ -28,7 +28,7 @@ import random
 lives = 2
 turns_left = 10
 correct_guesses = 0
-
+current_number = random.randint(1, 13)
 
 print('Welcome in guess game. Let\'s see if you can guess if next number is lower or higher.')
 print('I will give you 10 numbers, all you need to do if next number is higher or lower.')
@@ -37,15 +37,13 @@ print('       ')
 print('You have 2 lives. Be careful. Numbers will be from 1 to 13.')
 print('  ')
 
-current_number = random.randint(1, 13)
-
 while turns_left > 0 and lives > 0:
     
     next_number = random.randint(1, 13)
     print('Current number is:', current_number)
     guess = str(input('Is next number going to be higher or lower? L or H? '))
     turns_left -= 1
-    # print('Turns left:', turns_left)
+
     if guess.lower() == 'l':
         if next_number > current_number:
             lives -= 1
@@ -69,7 +67,6 @@ while turns_left > 0 and lives > 0:
     
     print('Lives left:', lives)
     current_number = next_number
-    # next_number = random.randint(1, 13)
     
     if correct_guesses == 10:
         print('Champs Champ. You\'ve guessed all of the numbers right!')

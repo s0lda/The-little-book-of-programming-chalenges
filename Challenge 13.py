@@ -26,14 +26,13 @@ print('Starting number is:', starting_number)
 while starting_number > 0:
     if turn % 2 == 0:
         starting_number -= int(input('Choose number from 1 to 3: '))
-        turn += 1
         print(starting_number)
         if starting_number <= 0:
             print('Player lost the game.')
     else:
         print('Computer is choosing.')
         starting_number -= random.randint(1, 3)
-        turn += 1
         print(starting_number)
         if starting_number <= 0:
             print('Computer lost the game.')
+    turn += 1

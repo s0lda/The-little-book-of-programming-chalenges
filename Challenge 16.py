@@ -48,12 +48,11 @@ elif choice.upper() == 'C':
             print('Computer is guessing it could be : %d' % (computer_choice))
             higher = computer_choice
             computer_choice = random.randint(lower + 1, higher - 1)
-        elif computer_choice < secret_number:
+        else:
             print('Computer is guessing it could be : %d' % (computer_choice))
             lower = computer_choice
             computer_choice = random.randint(lower + 1, higher - 1)
-        else:
-            print('Computer gave up.. joking only, he would never do that.')
+        
         attempts += 1
     print('Computer guessed your number in %d attempts.' % (attempts))
     

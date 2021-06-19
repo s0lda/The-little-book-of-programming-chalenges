@@ -51,9 +51,6 @@ while turns_left > 0 and lives > 0:
         elif next_number < current_number:
             correct_guesses += 1
             print('That is right.')
-        else:
-            lives -= 1
-            print('Wrong answer. It have to be L or H.')
     elif guess.lower() == 'h':
         if next_number >= current_number:
             correct_guesses += 1
@@ -61,9 +58,10 @@ while turns_left > 0 and lives > 0:
         elif next_number < current_number:
             lives -= 1
             print('Wrong guess.')
-        else:
-            lives -= 1
-            print('Wrong answer. It have to be L or H.')
+    else:
+        lives -= 1
+        print('Wrong answer. It have to be L or H.')
+            
     
     print('Lives left:', lives)
     current_number = next_number

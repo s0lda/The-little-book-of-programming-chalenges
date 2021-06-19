@@ -30,12 +30,10 @@ while starting_number > 0:
         print(starting_number)
         if starting_number <= 0:
             print('Player lost the game.')
-    elif turn % 2 != 0:
+    else:
         print('Computer is choosing.')
         starting_number -= random.randint(1, 3)
         turn += 1
         print(starting_number)
         if starting_number <= 0:
             print('Computer lost the game.')
-
-

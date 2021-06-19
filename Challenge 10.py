@@ -67,7 +67,7 @@ while True:
         print('You lose!)')
         losses += 1
     elif player_move == 'p' and computer_move == 's':
-        print('You losse!')
+        print('You lose!')
         losses += 1
     elif player_move == 's' and computer_move == 'r':
         print('You lose!')

@@ -56,7 +56,7 @@ job = str(input('Do you want to encrypt or decrypt your message? '))
 message = str(input('Enter your message here. '))
 
 # Test Case
-# job = 'd'
+# job = 'e'
 # message = 'Test message to encrypt and decrypt.'
 # message = ['X', 'j', 'x', 'y', '!', 'o', 'j', 'w', 't', 'd', 'l', 'h', '$', 'y', 's', '%', 'i', 'r', 'f', 's', '~', 'r', 'u', '"', 'f', 'p', 'f', '!', 'i', 'f', 'd', 't', 'z', 'u', 'u', '/']
 # key= [4, 5, 5, 5, 1, 2, 5, 4, 1, 3, 5, 3, 4, 5, 4, 5, 4, 4, 3, 1, 5, 2, 1, 2, 5, 2, 2, 1, 5, 1, 1, 2, 1, 5, 1, 1]

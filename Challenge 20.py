@@ -5,7 +5,7 @@ for rabbit population growth). The Fibonacci sequence goes like this.
 The Nth term is the sum of the previous two terms. So in the
 example above the next term would be 21 because it would be the
 previous two terms added together (8+13).
-You will need create a list of Fibonnaci numbers up to the 50th
+You will need create a list of Fibonacci numbers up to the 50th
 term.
 The program will then ask the user for which position in the sequence they want to know the Fibonacci value for (up to 50).
 E.g
@@ -20,5 +20,5 @@ fibonacci_numbers = [0, 1]
 for i in range(2, 50):
     fibonacci_numbers.append(fibonacci_numbers[i - 1] + fibonacci_numbers[i - 2])
 
-num = int(input('What position of Fibbonaci list do you want to check? '))
+num = int(input('What position of Fibonacci list do you want to check? '))
 print(fibonacci_numbers[num])

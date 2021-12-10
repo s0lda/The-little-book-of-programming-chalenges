@@ -13,14 +13,12 @@ class Area {
         System.out.println("Is this a cuboid? Yes/No");
         Scanner answer = new Scanner(System.in);
         String ans = answer.nextLine();
-        if (ans.equals("yes")) {
+        if (ans.toLowerCase().equals("yes")) {
             System.out.println("What is the height of your cuboid?");
             int height = getNumber();
             int volume = width * height * length;
             System.out.println("Volume of your cuboid is: " + volume + ".");
-
         }
-        
     }
 
     public static Integer getNumber() {

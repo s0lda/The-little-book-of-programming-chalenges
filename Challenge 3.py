@@ -1,6 +1,6 @@
 '''
 Write a program to work out the areas of a rectangle.
-Collect the width and lenght of the rectangle from the keyboard
+Collect the width and length of the rectangle from the keyboard
 Calculate the area
 display the result.
 

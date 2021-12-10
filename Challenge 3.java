@@ -23,12 +23,16 @@ class Area {
 
     public static Integer getNumber() {
         int input = 0;
-        try {
-            System.out.print(">> ");
-            Scanner sc_input = new Scanner(System.in);
-            input = sc_input.nextInt();
-        } catch (InputMismatchException Integer) {
-            System.out.println("You need to use numbers.");
+        boolean correct = true;
+        while (correct) {
+            try {
+                System.out.print(">> ");
+                Scanner sc_input = new Scanner(System.in);
+                input = sc_input.nextInt();
+                correct = false;
+            } catch (InputMismatchException Integer) {
+                System.out.println("You need to use numbers.");
+            }
         }
         return input;
     }

@@ -17,7 +17,6 @@ class DaysYouLived {
         else {
             System.out.println("Wrong input.");
         }
-        
     }
 
     public static String getTodaysDate() {

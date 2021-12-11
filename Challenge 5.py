@@ -1,6 +1,6 @@
 '''
 Write a program to work out how many days you have lived for.
-Agorithm
+Algorithm
  Enter date of birth
  Get today’s date
  Get the difference in days between the two dates
@@ -22,5 +22,5 @@ print('You live', delta.days, 'days.')
 
 seconds = delta.days * 24 * 60 * 60
 
-print('You lived', seconds, 'seconds.')
+print('You live', seconds, 'seconds.')
 

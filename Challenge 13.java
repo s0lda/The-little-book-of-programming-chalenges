@@ -7,7 +7,7 @@ class Eliminator {
 
     static int getRandomNumber(int start_range, int end_range) {
         Random r = new Random();
-        // Make max number to be inclusive.
+        // Make max number inclusive.
         end_range += 1;
         return r.nextInt(end_range - start_range) + start_range;
     }

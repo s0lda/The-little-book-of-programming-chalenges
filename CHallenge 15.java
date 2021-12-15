@@ -8,14 +8,24 @@ class ReverseSentence {
         return input;
     }
 
-    static String reverseText(String to_reverse) {
-        String reversed = new StringBuilder(to_reverse).reverse().toString();
+    static String reverseText(String sentence) {
+        String reversed = new StringBuilder(sentence).reverse().toString();
         return reversed;
     }
+
+    static int countWords(String sentence) {
+        if (sentence == null || sentence.isEmpty()) {
+            return 0;
+        }
+        String[] words = sentence.split("\\s+");
+        return words.length;
+    }
     public static void main(String[] args) {
-        System.out.println("Input sentence you want to reverse.");
+        System.out.println("Input your sentence.");
         String usr_input = getUserInput();
+        int word_count = countWords(usr_input);
+        System.out.println("Number of words: " + word_count);
         String reversed = reverseText(usr_input);
-        System.out.println(reversed);
+        System.out.println("Reversed sentence: " + reversed);
     }
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 class NumberFactors {
     static int getUserIntInput() {
         boolean check = false;
-        int output = 34403;
+        int output = 34404;
         System.out.print(">> ");
         Scanner sc_input = new Scanner(System.in);
         while (check == false) {

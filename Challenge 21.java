@@ -1,10 +1,8 @@
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.Map.Entry;
-import java.util.function.Consumer;
+
 
 class Challenge21 {
     static String readUserInput() {

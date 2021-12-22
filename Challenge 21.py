@@ -16,7 +16,7 @@ Extension
 Display how many times each name has been duplicated
 '''
 
-names: str = []
+names: list[str] = []
 
 while True:
     try:

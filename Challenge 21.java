@@ -14,16 +14,16 @@ class Challenge21 {
         return input;
     }
 
-    static void printDuplicates(String[] duplicates) {
-        Map<String, Integer> duplicatesMap = new HashMap<String, Integer>();
-        for (int i = 0; i < duplicates.length; i++) {
-            if (duplicatesMap.containsKey(duplicates[i])) {
-                duplicatesMap.merge(duplicates[i], 1, Integer::sum);
+    static void printDuplicates(String[] listOfEntries) {
+        Map<String, Integer> entriesMap = new HashMap<String, Integer>();
+        for (int i = 0; i < listOfEntries.length; i++) {
+            if (entriesMap.containsKey(listOfEntries[i])) {
+                entriesMap.merge(listOfEntries[i], 1, Integer::sum);
             } else {
-                duplicatesMap.put(duplicates[i], 1);
+                entriesMap.put(listOfEntries[i], 1);
             }
         }
-        duplicatesMap.forEach((key, value) -> {
+        entriesMap.forEach((key, value) -> {
             if (value > 1) {
                 System.out.println("Name: " + key + " is " + value + " times in the list.");
             }});

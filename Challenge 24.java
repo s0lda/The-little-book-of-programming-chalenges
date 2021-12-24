@@ -47,11 +47,11 @@ class ScoreManager {
         }
     }
 
-    static int getRandomNumber(int start_range, int end_range) {
+    static int getRandomNumber(int min, int max) {
         Random r = new Random();
         // Make max number inclusive.
-        end_range += 1;
-        return r.nextInt(end_range - start_range) + start_range;
+        max += 1;
+        return r.nextInt(max - min) + min;
     }
 
     public static void main(String[] args) {
